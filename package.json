@@ -1,0 +1,27 @@
+{
+  "name": "derby-starter",
+  "version": "0.0.1",
+  "description": "A generic server for a simple Derby app",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codeparty/derby-starter.git"
+  },
+  "keywords": [
+    "derby"
+  ],
+  "author": "Nate Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeparty/derby-starter/issues"
+  },
+  "dependencies": {
+    "derby": "*",
+    "express": "~3.4.7",
+    "coffeeify": "~0.5.2",
+    "redis": "~0.10.0",
+    "connect-redis": "~1.4.6",
+    "racer-browserchannel": "~0.1.1",
+    "livedb-mongo": "~0.3.0"
+  }
+}
