@@ -23,6 +23,7 @@
     "redis": "~0.10.1",
     "connect-redis": "~1.4.7",
     "racer-browserchannel": "~0.1.1",
+    "racer-bundle": "~0.1.1",
     "livedb-mongo": "~0.3.0"
   },
   "optionalDependencies": {
