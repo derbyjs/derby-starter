@@ -1,0 +1,11 @@
+{
+  "mongo": {
+    "url": "mongodb://localhost:27017/derby-starter-test"
+  },
+  "redis": {
+    "db": 3
+  },
+  "session": {
+    "secret": "USE A REAL SECRET WHEN YOU DEPLOY"
+  }
+}

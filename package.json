@@ -16,17 +16,20 @@
     "url": "https://github.com/codeparty/derby-starter/issues"
   },
   "dependencies": {
-    "derby": "~0.6",
+    "derby": "git://github.com/codeparty/derby.git#375a2da411df1e9fdefcef43c71fa3205603bf2b",
+    "racer": "git://github.com/codeparty/racer.git#b3048e712caf9d47b5bd7a5d2e5421aaf8b11c0b",
     "express": "~3.4.8",
+    "convict": "~0.4.2",
     "coffee-script": "~1.7.1",
     "coffeeify": "~0.6.0",
-    "redis": "~0.10.1",
-    "connect-redis": "~1.4.7",
-    "racer-browserchannel": "^0.2.0",
+    "racer-browserchannel": "~0.2.0",
     "racer-bundle": "~0.1.1",
     "livedb-mongo": "~0.3.0"
   },
   "optionalDependencies": {
+    "redis": "~0.10.1",
+    "connect-redis": "~1.4.7",
+    "connect-mongo": "~0.4.1",
     "hiredis": "~0.1.16"
   }
 }
