@@ -2,9 +2,6 @@
   "mongo": {
     "db": "derby-starter-development"
   },
-  "redis": {
-    "db": 2
-  },
   "session": {
     "secret": "USE A REAL SECRET WHEN YOU DEPLOY"
   }

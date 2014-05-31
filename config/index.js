@@ -69,47 +69,6 @@ module.exports = function config(options, cb) {
         }
       }
     },
-    redis: {
-      enabled: {
-        doc: 'Livedb will use the redisDriver when true and the inprocessDriver when false.',
-        format: Boolean,
-        default: false,
-        env: 'REDIS_ENABLED'
-      },
-      url: {
-        // format: 'url',
-        format: String,
-        default: undefined,
-        env: 'REDIS_URL'
-      },
-      host: {
-        format: String,
-        default: '127.0.0.1',
-        env: 'REDIS_HOST'
-      },
-      port: {
-        format: 'port',
-        default: 6379,
-        env: 'REDIS_PORT'
-      },
-      password: {
-        format: optionalSecret(16),
-        default: undefined,
-        env: 'REDIS_PASSWORD'
-      },
-      options: {
-        no_ready_check: {
-          format: Boolean,
-          default: true,
-          env: 'REDIS_NO_READY_CHECK'
-        }
-      },
-      db: {
-        format: 'int',
-        default: 0,
-        env: 'REDIS_DB'
-      }
-    },
     session: {
       secret: {
         doc: 'Secret used to sign the session cookie',
@@ -124,7 +83,6 @@ module.exports = function config(options, cb) {
   config.loadFile(__dirname + '/' + config.get('env') + '.json');
 
   if (config.has('mongo.url') === false) setMongoUrl(config);
-  if (config.has('redis.url') === true) useRedisUrl(config);
   if (cb) cb(null, config);
 
   config.validate();
@@ -134,13 +92,6 @@ module.exports = function config(options, cb) {
 function setMongoUrl(config) {
   var m = config.get('mongo');
   config.set('mongo.url', 'mongodb://' + m.host + ':' + m.port + '/' + m.db);
-}
-
-function useRedisUrl(config) {
-  var r = url.parse(config.get('redis.url'));
-  if (r.hostname) config.set('redis.host', r.hostname);
-  if (r.port) config.set('redis.port', r.port);
-  if (r.auth) config.set('redis.password', r.auth.split(':')[1]);
 }
 
 function secret(length) {
@@ -167,10 +118,6 @@ function checkUrl(protocol, attributes) {
 
 function mongoUrl(val) {
   checkUrl('mongodb:', ['hostname','port','path'])(val)
-}
-
-function redisUrl(val) {
-  checkUrl('redis:', ['hostname','port','path'])(val)
 }
 
 function envAlias(source, target) {
