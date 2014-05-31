@@ -31,7 +31,7 @@ module.exports = function config(options, cb) {
     ip: {
       doc: 'The ipv4 address to bind.',
       format: 'ipaddress',
-      default: '127.0.0.1',
+      default: '0.0.0.0',
       env: 'IP'
     },
     static: {
