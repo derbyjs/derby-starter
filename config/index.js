@@ -37,7 +37,7 @@ module.exports = function config(options, cb) {
     static: {
       doc: 'The folders express.static should serve.',
       format: mountPoints,
-      default: [path.resolve('public')]
+      default: path.resolve('public')
     },
     mongo: {
       url: {
@@ -125,9 +125,13 @@ function envAlias(source, target) {
 }
 
 function mountPoints(val) {
-  val.forEach(function (el) {
-    check(el.route).contains('/');
-    check(el.dir).notEmpty();
-  })
+  if (Array.isArray(val)) {
+    val.forEach(function (el) {
+      check(el.route).contains('/');
+      check(el.dir).notEmpty();
+    })
+  } else {
+    check(val).notEmpty();
+  }
 }
 
