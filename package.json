@@ -1,6 +1,6 @@
 {
   "name": "derby-starter",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A generic server for a simple Derby app",
   "main": "lib/index.js",
   "repository": {
