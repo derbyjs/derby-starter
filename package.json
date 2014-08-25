@@ -22,7 +22,7 @@
     "coffeeify": "~0.6.0",
     "redis": "~0.10.1",
     "connect-redis": "~1.4.7",
-    "racer-browserchannel": "^0.2.0",
+    "racer-browserchannel": "^0.3.0",
     "racer-bundle": "~0.1.1",
     "livedb-mongo": "~0.3.0"
   },
