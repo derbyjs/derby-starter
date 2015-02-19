@@ -16,7 +16,7 @@
     "url": "https://github.com/codeparty/derby-starter/issues"
   },
   "dependencies": {
-    "derby": "0.6.0-alpha29",
+    "derby": "0.6.0-alpha35",
     "express": "~3.4.8",
     "coffee-script": "~1.7.1",
     "coffeeify": "~0.6.0",
