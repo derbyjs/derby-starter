@@ -24,7 +24,8 @@
     "connect-redis": "~1.4.7",
     "racer-highway": "^1.4.1",
     "racer-bundle": "~0.1.1",
-    "livedb-mongo": "~0.3.0"
+    "livedb-mongo": "~0.3.0",
+    "livedb": "^0.5.9"
   },
   "optionalDependencies": {
     "hiredis": "^0.2.0"
