@@ -16,18 +16,17 @@
     "url": "https://github.com/codeparty/derby-starter/issues"
   },
   "dependencies": {
-    "derby": "0.6.0-alpha41",
-    "express": "~3.4.8",
-    "coffee-script": "~1.7.1",
-    "coffeeify": "~0.6.0",
-    "redis": "^0.12.1",
-    "connect-redis": "~1.4.7",
-    "racer-highway": "^1.4.1",
-    "racer-bundle": "~0.1.1",
-    "livedb-mongo": "~0.3.0",
-    "livedb": "^0.5.9"
-  },
-  "optionalDependencies": {
-    "hiredis": "^0.2.0"
+    "coffeeify": "^1.1.0",
+    "compression": "^1.6.0",
+    "connect-mongo": "^0.8.2",
+    "derby": "^0.6.0",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "mongodb": "^2.0.45",
+    "racer-bundle": "^0.2.0",
+    "racer-highway": "^3.0.2",
+    "serve-favicon": "^2.3.0",
+    "sharedb": "^0.8.0",
+    "sharedb-mongo": "^0.5.0"
   }
 }
