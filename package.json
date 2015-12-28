@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codeparty/derby-starter.git"
+    "url": "git://github.com/derbyjs/derby-starter.git"
   },
   "keywords": [
     "derby"
@@ -13,7 +13,7 @@
   "author": "Nate Smith",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codeparty/derby-starter/issues"
+    "url": "https://github.com/derbyjs/derby-starter/issues"
   },
   "dependencies": {
     "coffeeify": "^1.1.0",
