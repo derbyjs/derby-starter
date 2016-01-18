@@ -23,8 +23,8 @@
     "express": "^4.13.3",
     "express-session": "^1.11.3",
     "mongodb": "^2.0.45",
-    "racer-bundle": "^0.2.0",
-    "racer-highway": "^3.0.2",
+    "racer-bundle": "^0.2.4",
+    "racer-highway": "^7.0.0",
     "serve-favicon": "^2.3.0",
     "sharedb": "^0.8.0",
     "sharedb-mongo": "^0.5.0"
