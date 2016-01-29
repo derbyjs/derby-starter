@@ -16,9 +16,9 @@
     "url": "https://github.com/derbyjs/derby-starter/issues"
   },
   "dependencies": {
-    "coffeeify": "^1.1.0",
+    "coffeeify": "^2.0.1",
     "compression": "^1.6.0",
-    "connect-mongo": "^0.8.2",
+    "connect-mongo": "^1.1.0",
     "derby": "^0.8.0",
     "express": "^4.13.3",
     "express-session": "^1.11.3",
@@ -26,8 +26,8 @@
     "racer-bundle": "^0.2.4",
     "racer-highway": "^7.0.0",
     "serve-favicon": "^2.3.0",
-    "sharedb": "^0.8.0",
-    "sharedb-mongo": "^0.5.0"
+    "sharedb": "^0.11.33",
+    "sharedb-mongo": "^0.8.7"
   },
   "homepage": "https://github.com/derbyjs/derby-starter#readme",
   "devDependencies": {},
