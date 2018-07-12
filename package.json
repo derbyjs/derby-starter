@@ -24,7 +24,7 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "mongodb": "^2.2.9",
-    "racer-bundle": "^0.2.5",
+    "racer-bundle": "^0.3.0",
     "racer-highway": "^8.1.0",
     "serve-favicon": "^2.5.0",
     "sharedb-mongo": "^1.0.0-beta"
